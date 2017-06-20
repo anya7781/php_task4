@@ -23,9 +23,9 @@
 }
 .page__menu
 {
-	border: 1px solid black;
+	border: 1px solid #E1E1E1;
     margin: 0 auto;
-	height: 35px;
+	height: 45px;
 }
 
 .page__content
@@ -89,8 +89,9 @@
 .cart__button{
 	width: 100px;
 	border: 1px solid #DED3AA;
-	height: 30px;
+	height: inherit;
 	background-color:#ffffff;
+	cursor: pointer;
 }
 
 .currency__img{
@@ -99,6 +100,10 @@
 	margin-top:9px;
 	float: left;
 }
+.currency__down{
+	margin:12px 0 0 7px;
+	cursor: pointer;
+}
 
 .currency__text{
 	margin-top:7px;
@@ -106,7 +111,66 @@
 	float: left;
 	margin-left: 3px;
 	}
+	
+.menu__content{
+	width: 960px;
+	margin: 0 auto;
+	height: inherit;
+	display: table;
+}
 
+.content__img{
+	display: table-cell;
+	width: 20px;
+	text-align: center;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.content__table{
+	display: table-cell;
+}
+
+.content__dop{
+	display: table-cell;
+	width: 80px;
+}
+
+.table__links{
+	width: 500px;
+	height: inherit;
+	margin: 0 auto;
+	display:table;
+}
+.links__link{
+	display: table-cell;
+	
+	text-align:center;
+    color:#000000;
+    cursor:pointer;
+    font-size:10px;
+	text-decoration:none;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+.link__down{
+	margin-bottom: 2px;
+}
+
+.dop__like{
+	padding-right: 7px;
+	border-right: 1px dotted black;
+}
+
+.dop__search{
+	padding-left: 7px;
+}
+
+.dop {
+	text-align: center;
+	cursor: pointer;
+}
 
 
 
