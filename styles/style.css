@@ -30,9 +30,10 @@
 
 .page__content
 {
-	border: 1px solid black;
     width: 960px;
-    margin: 0 auto;
+    margin: 40px auto;
+	display: table;
+	height: 700px;
 }
 
 .page__footer
@@ -53,6 +54,7 @@
 .content__close{
 	float: right;
 	padding: 3px;
+	cursor: pointer;
 }
 
 .content__text{
@@ -126,8 +128,8 @@
 .content__img{
 	display: table-cell;
 	width: 20px;
-	text-align: center;
-	padding: 15px;
+	text-align: left;
+	padding: 15px 15px 15px 0;
 	cursor: pointer;
 }
 
@@ -163,16 +165,46 @@
 }
 
 .dop__like{
-	padding-right: 7px;
+	padding-right: 12px;
 	border-right: 1px dotted black;
+	float: right;
 }
 
 .dop__search{
-	padding-left: 7px;
+	padding-left: 12px;
+	float: right;
 }
 
 .dop {
 	text-align: center;
 	cursor: pointer;
 }
+
+.content__images{
+	display: table-cell;
+	width: 50%;
+}
+
+.content__info{
+	display: table-cell;
+	border: 1px solid black;
+}
+
+.images__main{
+	height: 80%;
+	background: url(../img/main_coat.jpg) no-repeat;
+}
+
+.images__several{
+	height: 20%;
+	width: 100%;
+	text-align: center;
+}
+
+.several__image{
+	width: 90px;
+	height: 115px;
+	padding: 10px;
+}
+
 
