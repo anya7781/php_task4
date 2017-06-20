@@ -37,9 +37,12 @@
 
 .page__footer
 {
-	border: 1px solid black;
+	border-top: 1px solid #E1E1E1;
     margin: 0 auto;
 	height: 20px;
+	text-align: center;
+	color: #91999E;
+	padding: 20px;
 }
 
 .head-line__content{
@@ -92,6 +95,7 @@
 	height: inherit;
 	background-color:#ffffff;
 	cursor: pointer;
+	font-size:10px;
 }
 
 .currency__img{
@@ -171,6 +175,4 @@
 	text-align: center;
 	cursor: pointer;
 }
-
-
 
