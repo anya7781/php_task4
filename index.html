@@ -19,8 +19,10 @@
     <div class="page__header">
 		<div class = "header__currency">
 			<img src = "img/usa.jpg" class = "currency__img">
-			<div class = "currency__text"> USD </div>
-			<img class = "currency__down" src = "img/down.png"/ width = "7" height = "5">
+					<select class = "currency__select">
+						<option selected> USD </option>
+						<option> RUS </option>
+					</select>
 		</div>
 		<div class = "header__logo">
 			BONFIRE
@@ -40,13 +42,31 @@
 			<div class = "content__table">
 				<div class = "table__links">
 					 <a href="#" class='links__link'>HOME</a>
-					 <a href="#" class='links__link'>MEN
-						<img class = "link__down" src = "img/down.png"/ width = "7">
-					 </a>
-					 
-					 <a href="#" class='links__link'>WOMEN
-						<img class = "link__down" src = "img/down.png"/ width = "7">
-					 </a>
+				
+						<div class = "link__dropdown">
+								<ul>
+									<li class="dropdown"><a href="#"><span>MAN</span></a>
+										<ul>
+											<li><a href="#"><span>Joshua Hibbert</span></a></li>
+											<li><a href="#"><span>Kyle Bragger</span></a></li>
+											<li><a href="#"><span>Jack Rugile</span></a></li>
+										</ul>
+									</li>
+								</ul>
+						</div>
+					
+						<div class = "link__dropdown">
+									<ul>
+										<li class="dropdown"><a href="#"><span>WOMAN</span></a>
+											<ul>
+												<li><a href="#"><span>Joshua Hibbert</span></a></li>
+												<li><a href="#"><span>Kyle Bragger</span></a></li>
+												<li><a href="#"><span>Jack Rugile</span></a></li>
+											</ul>
+										</li>
+									</ul>
+						</div>
+					
 					 <a href="#" class='links__link'>LOOKBOOK</a>
 					 <a href="#" class='links__link'>ABOUT</a>
 					 <a href="#" class='links__link'>BLOG</a>
@@ -56,7 +76,7 @@
 			<div class = "content__dop" >
 				<div class = "dop">
 					<img class = "dop__search" width = "15" height = "15" src = "img/search.png" />
-					<img class = "dop__like" width = "15" height = "15" src = "img/heart.jpg" />
+					<img class = "dop__like" width = "15" height = "15" src = "img/heart1.jpg" />
 				</div>
 			</div>
 		</div>	
@@ -93,15 +113,91 @@
 					$499.00
 				</div>
 				
-				<div class = "info__characteristic item">a </div>
-				<div class = "info__description item"> a</div>
-				<div class = "info__properties item">a </div>
-				<div class = "info__clear item">a </div>
-				<div class = "info__buttons item">a </div>
-				<div class = "info__share item">a </div>
+				<div class = "info__characteristic item">
+					<p> Availability: <b class = "characteristic__value"> In stock </b> </p>
+					<p>Product Code: <b class = "characteristic__value"> #4657 </b></p>
+					<p>Tags: <b class = "characteristic__value"> Fashion, Hood, Classic </b></p>
+				</div>
+				
+				<div class = "info__description item"> 
+					Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but-
+					ton Lazio suit features a notch lapel, flap pockets, and accompanying flat
+					front trousers - all in pure wool by Vitale Barberis Canonico.
+					<br><br>
+					<ul class = "description__list">
+						 <li>Dark blue suit for a tone-on-tone look</li>
+						 <li>Regular fit</li>
+						 <li>100% Cotton</li> 
+						 <li>Free shipping with 4 days delivery</li>
+					</ul>
+				</div>
+				
+				<div class = "info__properties item">
+
+					<div class = "properties__color">
+						<p class = "properties__label"> COLOR </p>
+						<select class = "color__select">
+						  <option> Select color </option>
+						  <option> Red </option>
+						  <option> Black </option>
+						  <option> Yellow </option>
+						</select>
+					</div>
+					
+					<div class = "properties__size">
+						<p class = "properties__label"> SIZE </p>
+						<select class = "color__select">
+						  <option> Select size</option>
+						  <option> 44 </option>
+						  <option> 46 </option>
+						  <option> 48 </option> 
+						  <option> 50 </option>
+						</select>
+					</div>
+					
+					<div class = "properties__QTY">
+						<p class = "properties__label"> QTY </p>
+						<select class = "QTY__select">
+						  <option > 1 </option>
+						  <option selected> 2 </option>
+						  <option> 3 </option> 
+						  <option> 4 </option>
+						</select>
+					</div>
+
+				</div>
+				
+				<div class = "info__clear item">
+					<a href = "" class = "rating__add">CLEAR SELECTION</a>
+				</div>
+				<div class = "info__buttons item">
+					<button class = "buttons__cart"> ADD TO CART </button>
+					<button class = "buttons__wishlist"> 
+						<img class = "wishlist__img" width = "15" height = "13" src = "img/heart1.jpg" />
+						ADD TO WISHLIST 
+					</button>
+				</div>
+				
+				<div class = "info__share item">
+						<p>SHARE THIS</p>
+						<button class = "share__fb"> 
+							<img class = "wishlist__img" width = "15" height = "18" src = "img/fb.png" />
+							Like
+						</button>
+						<button class = "share__sh"> 
+							Share
+						</button>
+						<button class = "share__twitter"> 
+							<img class = "wishlist__img" width = "15" height = "18" src = "img/twitter.png" />
+							Tweet
+						</button>
+						<img class = "share__pinIt" width = "60" height = "25" src = "img/pin.jpg" />
+				</div>
 		</div>
 				
     </div>
+				
+				
     <div class="page__footer">
        Made with Love & Coffee @ 2015 Design Lazy. All Rights Reserved.
      </div>
