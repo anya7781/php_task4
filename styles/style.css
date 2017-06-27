@@ -1,9 +1,79 @@
+
+/* Код для подключения шрифта в /css/stylename.css */
+
+	@font-face {
+			font-family: "LatoRegular";
+			src: url("../fonts/LatoRegular/LatoRegular.eot");
+			src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+			url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoBold";
+			src: url("../fonts/LatoBold/LatoBold.eot");
+			src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+			url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoItalic";
+			src: url("../fonts/LatoItalic/LatoItalic.eot");
+			src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoItalic/LatoItalic.woff") format("woff"),
+			url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoLight";
+			src: url("../fonts/LatoLight/LatoLight.eot");
+			src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+			url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoBoldItalic";
+			src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+			src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+			url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoLightItalic";
+			src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
+			src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
+			url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	a {
+		text-decoration: none;
+	}
+	
+	body {
+		font-family: "LatoRegular";
+	}
+	
 .page
 {
     width:100%;
     margin:0;
     background-color:#ffffff;
-    font-family:Oswald,Tahoma;
     font-size:12px;
 }
 
@@ -19,7 +89,10 @@
 {
     width: 960px;
     margin: 10px auto;
-	height: 40px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .page__menu
 {
@@ -32,7 +105,7 @@
 {
     width: 960px;
     margin: 40px auto;
-	display: table;
+	display: flex;
 	height: 700px;
 }
 
@@ -67,27 +140,19 @@
 }
 
 .header__currency{
-	float:left;
-	width: 50px;
-	height: 30px;
-	margin-top: 3px;
+	width: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header__logo{
-	width: 800px;
-	text-align:center;
-	float: left;
-	height: 30px;
-	font-size: 20px;
-	font-weight: bold;
-	margin-top: 3px;
+	font-size: 22px;
+	font-weight: 900;
 }
 
 .header__cart{
-	float:right;
-	width: 100px;
 	height: 30px;
-	margin-top: 3px;
 	text-align:center;
 }
 
@@ -97,50 +162,35 @@
 	height: inherit;
 	background-color:#ffffff;
 	cursor: pointer;
-	font-size:10px;
+	font-size:9px;
 }
 
 .currency__img{
 	height: 10px;
 	width: 12px;
-	margin-top:9px;
-	float: left;
 }
 .currency__down{
-	margin:12px 0 0 7px;
 	cursor: pointer;
 }
 
 .currency__text{
-	margin-top:7px;
 	width: 20px;
-	float: left;
-	margin-left: 3px;
-	}
+}
 	
 .menu__content{
-	width: 960px;
 	margin: 0 auto;
-	height: inherit;
-	display: table;
+	width: 960px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .content__img{
-	display: table-cell;
 	width: 20px;
-	text-align: left;
-	padding: 15px 15px 15px 0;
 	cursor: pointer;
 }
 
-.content__table{
-	display: table-cell;
-}
-
-.content__dop{
-	display: table-cell;
-	width: 80px;
-}
 
 .table__links{
 	width: 500px;
@@ -150,13 +200,10 @@
 }
 .links__link{
 	display: table-cell;
-	
 	text-align:center;
     color:#000000;
     cursor:pointer;
     font-size:10px;
-	text-decoration:none;
-	font-family: Geneva, Arial, Helvetica, sans-serif;
 	font-weight:bold;
 }
 
@@ -181,15 +228,15 @@
 }
 
 .content__images{
-	display: table-cell;
 	width: 50%;
 }
 
 .content__info{
-	display: table-cell;
-	border: 1px solid black;
 	width: 50%;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-begin;
+	justify-content: flex-begin;
 }
 
 .images__main{
@@ -209,3 +256,60 @@
 	padding: 10px;
 }
 
+.item {
+	padding: 5px 5px 5px 20px;
+}
+
+.info__back {
+	font-size: 14px;
+}
+
+.currency__down{
+	padding: 2px 5px 0 0;
+}
+
+.back__text{
+	color: #6C6C6C;
+}
+
+.text__link{
+	color: #68899A;
+}
+
+.info__name{
+	margin-top: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.info__rating{
+	display: flex;
+	width: 250px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rating__review{
+	padding-right: 10px;
+	border-right: 1px solid #8E8E8E;
+	color: #8E8E8E;
+}
+
+.rating__img{
+	width: 75px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.rating__add{
+	text-decoration: underline;
+	font-weight: bold;
+	color: #000000;
+}
+
+.info__price{
+	font-size: 25px;
+	color: #68899A;
+	font-weight: bold;
+	margin: 10px 0;
+}
